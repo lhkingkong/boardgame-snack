@@ -1,2 +1,0 @@
-# boardgame-snack
-Angular project
