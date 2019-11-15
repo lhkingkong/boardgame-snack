@@ -1,0 +1,48 @@
+@import "../../variables.scss";
+:host {
+  text-align: center;
+}
+.nav {
+  display: block;
+  li {
+    display: inline-block;
+    position: relative;
+    fa-icon {
+      font-size: 5em;
+      -webkit-filter:drop-shadow(2px 4px 5px rgba(0,0,0,0.5));      
+          filter:drop-shadow(2px 4px 5px rgba(0,0,0,0.5));
+    }
+    span {
+      position: absolute;
+      top: 90%;
+      left: 0;
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+    }
+    &:hover{
+        a{
+            color: $highlightBlue;
+        }
+    }
+  }
+  .nav-item-news,
+  .nav-item-contact {
+    a {
+      color: $white;
+    }
+  }
+
+  .nav-item-food,
+  .nav-item-shop {
+    a {
+      color: $mainOrange;
+    }
+  }
+
+  .nav-item-reserve {
+    a {
+      color: $mainYellow;
+    }
+  }
+}

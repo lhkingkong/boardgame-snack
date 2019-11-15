@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faNewspaper, faUtensils, faCalendar, faShoppingCart, faMapMarkedAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-main-nav',
@@ -7,7 +7,11 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./main-nav.component.scss']
 })
 export class MainNavComponent implements OnInit {
-  faCoffee = faCoffee;
+  faNewspaper = faNewspaper;
+  faUtensils = faUtensils;
+  faCalendar = faCalendar;
+  faShoppingCart = faShoppingCart;
+  faMapMarkedAlt = faMapMarkedAlt;
 
   constructor() { }
 

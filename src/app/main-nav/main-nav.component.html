@@ -1,20 +1,32 @@
 <ul class="nav">
-    <li class="nav-item">
-        <a class="nav-link" href="">
-            <fa-icon [icon]="faCoffee"></fa-icon>
-            Noticias
+    <li class="nav-item nav-item-news">
+        <a class="nav-link" routerLink="/news">
+            <fa-icon [icon]="faNewspaper"></fa-icon>
+            <span>Noticias</span>
         </a>
     </li>
-    <li class="nav-item">
-        <a class="nav-link" href="">Menu</a>
+    <li class="nav-item nav-item-food">
+        <a class="nav-link" routerLink="/food">
+            <fa-icon [icon]="faUtensils"></fa-icon>
+            <span>Menu</span>
+        </a>
     </li>
-    <li class="nav-item">
-        <a class="nav-link" href="">Reserva</a>
+    <li class="nav-item nav-item-reserve">
+        <a class="nav-link" routerLink="/reserve">
+            <fa-icon [icon]="faCalendar"></fa-icon>
+            <span>Reserva</span>
+        </a>
     </li>
-    <li class="nav-item">
-        <a class="nav-link" href="">Compra</a>
+    <li class="nav-item nav-item-shop">
+        <a class="nav-link" routerLink="/shop">
+            <fa-icon [icon]="faShoppingCart"></fa-icon>
+            <span>Compra</span>
+        </a>
     </li>
-    <li class="nav-item">
-        <a class="nav-link" href="">Contacto</a>
+    <li class="nav-item nav-item-contact">
+        <a class="nav-link" routerLink="/contact">
+            <fa-icon [icon]="faMapMarkedAlt"></fa-icon>
+            <span>Contacto</span>
+        </a>
     </li>
 </ul>
