@@ -14,8 +14,8 @@
         position: relative;
         vertical-align: middle;
         fa-icon {
-          -webkit-filter: drop-shadow(2px 4px 5px rgba(0, 0, 0, 0.5));
-          filter: drop-shadow(2px 4px 5px rgba(0, 0, 0, 0.5));
+          -webkit-filter: drop-shadow(2px 4px 5px $darker5);
+          filter: drop-shadow(2px 4px 5px $darker5);
         }
         span {
           margin-left: 10px;

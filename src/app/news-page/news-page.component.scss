@@ -1,0 +1,26 @@
+@import "../../variables.scss";
+
+.news-item{
+    background: $yellowCard;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    box-shadow: 1px 2px 5px $darker3;
+    .body{
+        padding: 15px;
+        vertical-align: top;
+        h2{
+            font-family: "front_page_neueregular";
+        }
+    }
+    .body:not(.no-thumbnail){
+        width: calc(100% - 150px);
+        display: inline-block;
+    }
+    img{
+        transform: skew(-6deg);
+        -webkit-transform: skew(-6deg);
+        -moz-transform: skew(-6deg);
+        box-shadow: -4px 0 4px $darker5;
+    }
+}

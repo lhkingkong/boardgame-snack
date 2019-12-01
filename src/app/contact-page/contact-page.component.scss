@@ -1,0 +1,23 @@
+@import "../../variables.scss";
+
+h3{
+    font-family: "front_page_neueregular";
+    text-transform: uppercase;
+    font-weight: normal;
+    color: $mainBlue;
+    margin: 10px 0 30px;
+    text-align: center;
+}
+.row{
+    .col-md-6{
+        text-align: right;
+        > div{
+            font-size: 1.5em;
+            margin: 25px;
+        }
+        iframe{
+            border-radius: 5px;
+            box-shadow: 3px 2px 5px $darker5;
+        }
+    }
+}
