@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { faNewspaper, faUtensils, faCalendar, faShoppingCart, faMapMarkedAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -7,6 +7,8 @@ import { faNewspaper, faUtensils, faCalendar, faShoppingCart, faMapMarkedAlt } f
   styleUrls: ['./main-nav.component.scss']
 })
 export class MainNavComponent implements OnInit {
+  @Input() isHome: boolean = false;
+
   faNewspaper = faNewspaper;
   faUtensils = faUtensils;
   faCalendar = faCalendar;

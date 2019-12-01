@@ -1,4 +1,9 @@
-<ul class="nav">
+<ul class="nav" [ngClass]="{ 'home': isHome }">
+    <li *ngIf="!isHome" class="nav-item nav-item-home">
+        <a class="nav-link" routerLink="/">
+            <h1>La Madriguera</h1>
+        </a>
+    </li>
     <li class="nav-item nav-item-news">
         <a class="nav-link" routerLink="/news">
             <fa-icon [icon]="faNewspaper"></fa-icon>

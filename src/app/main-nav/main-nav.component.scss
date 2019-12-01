@@ -4,28 +4,73 @@
 }
 .nav {
   display: block;
-  li {
-    display: inline-block;
-    position: relative;
-    fa-icon {
-      font-size: 5em;
-      -webkit-filter:drop-shadow(2px 4px 5px rgba(0,0,0,0.5));      
-          filter:drop-shadow(2px 4px 5px rgba(0,0,0,0.5));
-    }
-    span {
-      position: absolute;
-      top: 90%;
-      left: 0;
+  &:not(.home){
+    text-align: left;
+    background: $mainBlue;
+    li {
       display: inline-block;
-      width: 100%;
-      text-align: center;
-    }
-    &:hover{
-        a{
-            color: $highlightBlue;
+      a {
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        fa-icon {
+          -webkit-filter: drop-shadow(2px 4px 5px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(2px 4px 5px rgba(0, 0, 0, 0.5));
         }
+        span {
+          margin-left: 10px;
+          display: inline-block;
+          text-align: center;
+        }
+  
+        h1 {
+          color: $white;
+          text-transform: uppercase;
+          font-family: "front_page_neueregular";
+          font-size: 2.5em;
+          text-align: center;
+          padding: 0;
+          margin: 0;
+        }
+      }
+  
+      &:hover {
+        a {
+          -webkit-filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.9));
+          filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.9));
+        }
+      }
     }
   }
+
+  &.home {
+    li {
+      display: inline-block;
+      a {
+        display: inline-block;
+        position: relative;
+        fa-icon {
+          font-size: 5em;
+          -webkit-filter: drop-shadow(2px 4px 5px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(2px 4px 5px rgba(0, 0, 0, 0.5));
+        }
+        span {
+          position: absolute;
+          top: 90%;
+          left: 0;
+          display: inline-block;
+          width: 100%;
+          text-align: center;
+        }
+      }
+      &:hover {
+        a {
+          color: $highlightBlue;
+        }
+      }
+    }
+  }
+
   .nav-item-news,
   .nav-item-contact {
     a {
@@ -44,5 +89,9 @@
     a {
       color: $mainYellow;
     }
+  }
+
+  .nav-item-home{
+    text-decoration: underline;
   }
 }
